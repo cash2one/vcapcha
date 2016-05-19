@@ -27,5 +27,5 @@ mv eng.number-dawg $2.number-dawg
 mv eng.freq-dawg $2.freq-dawg
 # 生成语言文件
 combine_tessdata $2.
-cp $2.traineddata ../..
+cp $2.traineddata ../../tessdata
 sudo cp $2.traineddata /usr/share/tesseract-ocr/tessdata/
