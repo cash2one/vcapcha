@@ -19,5 +19,13 @@ cp ../../eng/eng.punc-dawg .
 cp ../../eng/eng.word-dawg .
 cp ../../eng/eng.number-dawg .
 cp ../../eng/eng.freq-dawg .
+
+mv eng.unicharambigs $2.unicharambigs
+mv eng.punc-dawg $2.punc-dawg
+mv eng.word-dawg $2.word-dawg
+mv eng.number-dawg $2.number-dawg
+mv eng.freq-dawg $2.freq-dawg
 # 生成语言文件
 combine_tessdata $2.
+cp $2.traineddata ../..
+sudo cp $2.traineddata /usr/share/tesseract-ocr/tessdata/

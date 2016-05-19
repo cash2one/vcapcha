@@ -3,6 +3,16 @@
 from operator import itemgetter
 
 
+def rmbg(im, cp=20, r=0):
+    w, h = im.size
+    for x in xrange(w):
+        for y in xrange(h):
+            pix = im.getpixel((x, y))
+            if pix < (cp, cp, cp):
+                im.putpixel((x, y), (255, 255, 255))
+    return im
+
+
 def top(im):
     im = im.convert('P')
     his = im.histogram()
