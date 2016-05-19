@@ -1,4 +1,7 @@
 /png/*
+/tmp/*
+/eng/*
 *.zip
 *.png
 *.pyc
+*.txt
