@@ -3,5 +3,6 @@
 /eng/*
 *.zip
 *.png
+*.jpg
 *.pyc
 *.txt
